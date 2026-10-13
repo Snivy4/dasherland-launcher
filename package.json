@@ -1,0 +1,44 @@
+{
+  "name": "dasherland-launcher",
+  "version": "0.1.0",
+  "description": "Custom Minecraft launcher for the Dasherland server",
+  "main": "src/main/index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@xmcl/installer": "^5.3.1",
+    "electron-updater": "^6.3.9",
+    "minecraft-launcher-core": "^3.18.1",
+    "msmc": "^5.0.5",
+    "undici": "^6.0.1"
+  },
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.dasherland.launcher",
+    "productName": "Dasherland Launcher",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "manifest/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

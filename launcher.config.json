@@ -1,0 +1,10 @@
+{
+  "serverName": "Dasherland",
+  "serverAddress": "play.dasherland.example.com",
+  "minecraftVersion": "1.20.1",
+  "modLoader": {
+    "type": "fabric",
+    "version": "0.15.11"
+  },
+  "manifestUrl": "https://your-cdn.example.com/modpack-manifest.json"
+}

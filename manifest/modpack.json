@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "minecraftVersion": "1.20.1",
+  "modLoader": { "type": "fabric", "version": "0.15.11" },
+  "mods": []
+}
